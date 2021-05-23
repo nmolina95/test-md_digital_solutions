@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;700;900&display=swap');
+
+:root{
+    --main-font: 'Noto Sans JP', sans-serif;
+    --font-color: #5c5c5c;
+    --border-color: #e6e6e6;
+    --background-even: #f9f9f9;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--font-color);
+    font-family: var(--main-font);
+    font-weight: 300;
+    table-layout: fixed;
+}
+td,th{
+    border: 1px solid var(--border-color);
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: var(--background-even);
+}
